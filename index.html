@@ -1,0 +1,1759 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>色88_色88官方视频门户_色88原创影像社区</title>
+<meta name="description" content="色88官方网站，聚焦色彩影像与原创短片的视频内容平台，为创作者与观众搭建高品质内容生态，持续输出正版高清精品内容。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f2a44'/%3E%3Ccircle cx='24' cy='26' r='11' fill='%23ff6b4a'/%3E%3Ccircle cx='42' cy='38' r='11' fill='%234fc3f7' opacity='0.85'/%3E%3Ccircle cx='26' cy='44' r='7' fill='%23ffd166'/%3E%3C/svg%3E">
+<style>
+:root{
+  --s88-ink:#1f2a44;
+  --s88-ink-soft:#3c4a68;
+  --s88-paper:#f6f7fb;
+  --s88-card:#ffffff;
+  --s88-line:#dfe3ee;
+  --s88-coral:#ff6b4a;
+  --s88-sky:#2f7fd1;
+  --s88-sun:#ffc94d;
+  --s88-mint:#2fae8f;
+  --s88-muted:#6b7793;
+  --s88-radius:16px;
+  --s88-shadow:0 10px 30px rgba(31,42,68,.08);
+  --s88-head-h:118px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color:var(--s88-ink);
+  background:var(--s88-paper);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.s88-wrap{width:min(1180px,92vw);margin:0 auto}
+.s88-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ===== S1 公告条 + 页头（吸顶） ===== */
+.s88-topbar{
+  position:sticky;
+  top:0;
+  z-index:60;
+  background:var(--s88-ink);
+  color:#eaf0fb;
+  font-size:.82rem;
+  letter-spacing:.02em;
+}
+.s88-topbar .s88-wrap{
+  display:flex;align-items:center;gap:14px;
+  min-height:38px;padding:6px 0;
+  flex-wrap:wrap;
+}
+.s88-topbar-tag{
+  background:var(--s88-coral);color:#fff;border-radius:999px;
+  padding:1px 10px;font-weight:700;font-size:.74rem;letter-spacing:.08em;white-space:nowrap;
+}
+.s88-topbar-text{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.s88-topbar-link{color:var(--s88-sun);font-weight:600;white-space:nowrap;border-bottom:1px dashed rgba(255,201,77,.6)}
+.s88-header{
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--s88-line);
+  position:sticky;
+  top:38px;
+  z-index:55;
+}
+.s88-header .s88-wrap{display:flex;align-items:center;gap:18px;min-height:70px}
+.s88-logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.s88-logo-mark{
+  width:38px;height:38px;border-radius:12px;background:var(--s88-ink);
+  display:grid;place-items:center;flex:0 0 auto;
+}
+.s88-logo-mark span{
+  width:12px;height:12px;border-radius:50%;background:var(--s88-coral);
+  box-shadow:-11px 5px 0 var(--s88-sky),11px 7px 0 var(--s88-sun);
+}
+.s88-logo-txt{font-weight:800;font-size:1.18rem;letter-spacing:.04em}
+.s88-logo-txt small{display:block;font-size:.62rem;font-weight:600;color:var(--s88-muted);letter-spacing:.18em}
+.s88-nav{display:flex;gap:4px;flex:1 1 auto;flex-wrap:wrap}
+.s88-nav a{
+  padding:8px 11px;border-radius:10px;font-size:.92rem;font-weight:600;color:var(--s88-ink-soft);
+  transition:background .18s,color .18s;
+}
+.s88-nav a:hover{background:#eef2fb;color:var(--s88-sky)}
+.s88-search{display:flex;align-items:center;gap:6px;flex:0 0 auto}
+.s88-search input{
+  width:168px;padding:8px 12px;border:1px solid var(--s88-line);border-radius:999px;
+  font-size:.85rem;background:#fff;color:var(--s88-ink);outline:none;transition:border-color .18s,width .18s;
+}
+.s88-search input:focus{border-color:var(--s88-sky);width:200px}
+.s88-search button{
+  border:0;border-radius:999px;padding:8px 16px;background:var(--s88-coral);color:#fff;
+  font-weight:700;font-size:.85rem;transition:transform .15s,filter .15s;
+}
+.s88-search button:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.s88-search-tip{
+  position:absolute;right:0;top:calc(100% + 8px);width:280px;background:#fff;border:1px solid var(--s88-line);
+  border-radius:12px;box-shadow:var(--s88-shadow);padding:10px 12px;font-size:.82rem;color:var(--s88-ink-soft);
+  display:none;z-index:70;
+}
+.s88-search-wrap{position:relative;display:flex;gap:6px;align-items:center}
+.s88-search-tip.s88-on{display:block}
+.s88-search-tip b{color:var(--s88-coral)}
+.s88-burger{
+  display:none;border:1px solid var(--s88-line);background:#fff;border-radius:10px;
+  width:42px;height:40px;font-size:1.1rem;color:var(--s88-ink);align-items:center;justify-content:center;
+}
+.s88-mobile-nav{display:none;border-top:1px solid var(--s88-line);background:#fff}
+.s88-mobile-nav.s88-on{display:block}
+.s88-mobile-nav ul{list-style:none;margin:0;padding:8px 0 14px}
+.s88-mobile-nav li a{display:block;padding:10px 4px;font-weight:600;color:var(--s88-ink-soft)}
+
+/* ===== 锚点偏移 ===== */
+section[id],div[id^="sec-"]{scroll-margin-top:calc(var(--s88-head-h) + 12px)}
+
+/* ===== 首屏 S2（左文右侧大图与数据条 / 4:6） ===== */
+.s88-hero{padding:52px 0 56px;position:relative;overflow:hidden}
+.s88-hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(720px 320px at 12% -10%,rgba(255,107,74,.13),transparent 70%),
+    radial-gradient(560px 300px at 92% 0%,rgba(47,127,209,.14),transparent 70%);
+  pointer-events:none;
+}
+.s88-hero-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);gap:44px;align-items:center;position:relative}
+.s88-kicker{
+  display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--s88-line);
+  border-radius:999px;padding:5px 14px;font-size:.78rem;font-weight:700;color:var(--s88-sky);letter-spacing:.06em;
+}
+.s88-kicker i{width:7px;height:7px;border-radius:50%;background:var(--s88-mint);display:inline-block}
+.s88-hero h1{
+  font-size:clamp(2.5rem,5.4vw,4.1rem);line-height:1.08;margin:18px 0 6px;letter-spacing:.01em;
+}
+.s88-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(96deg,var(--s88-coral),var(--s88-sun) 52%,var(--s88-sky));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.s88-hero-sub{font-size:1.04rem;color:var(--s88-ink-soft);margin:0 0 16px;font-weight:600}
+.s88-hero-intro{font-size:.95rem;color:var(--s88-muted);margin:0 0 22px;text-align:justify}
+.s88-hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.s88-btn{
+  display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:11px 22px;
+  font-weight:700;font-size:.9rem;border:1px solid transparent;transition:transform .15s,box-shadow .2s;
+}
+.s88-btn:hover{transform:translateY(-2px)}
+.s88-btn-primary{background:var(--s88-ink);color:#fff;box-shadow:0 8px 20px rgba(31,42,68,.22)}
+.s88-btn-ghost{background:#fff;color:var(--s88-ink);border-color:var(--s88-line)}
+.s88-btn-coral{background:var(--s88-coral);color:#fff}
+.s88-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;border-top:1px solid var(--s88-line);padding-top:18px}
+.s88-stat b{display:block;font-size:1.5rem;line-height:1.2;letter-spacing:.01em}
+.s88-stat span{font-size:.76rem;color:var(--s88-muted);font-weight:600}
+.s88-hero-visual{position:relative}
+.s88-hero-visual .s88-hero-shot{
+  border-radius:22px;overflow:hidden;box-shadow:0 26px 60px rgba(31,42,68,.2);border:6px solid #fff;background:#fff;
+}
+.s88-hero-shot svg{display:block;width:100%;height:auto}
+.s88-hero-float{
+  position:absolute;left:-16px;bottom:26px;background:#fff;border:1px solid var(--s88-line);
+  border-radius:14px;padding:10px 14px;box-shadow:var(--s88-shadow);display:flex;gap:10px;align-items:center;max-width:76%;
+}
+.s88-hero-float b{font-size:.84rem;display:block}
+.s88-hero-float small{color:var(--s88-muted);font-size:.72rem}
+.s88-hero-float .s88-dot{width:34px;height:34px;border-radius:10px;background:linear-gradient(140deg,var(--s88-coral),var(--s88-sun));flex:0 0 auto}
+
+/* ===== 通用板块 ===== */
+.s88-sec{padding:58px 0}
+.s88-sec-alt{background:linear-gradient(180deg,#fff,#f2f5fc)}
+.s88-sec-head{margin-bottom:26px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.s88-sec-head h2{font-size:clamp(1.45rem,2.6vw,2rem);margin:0;letter-spacing:.01em}
+.s88-sec-head h2 span{color:var(--s88-coral)}
+.s88-sec-head p{margin:6px 0 0;color:var(--s88-muted);font-size:.9rem;max-width:640px}
+.s88-tagline{font-size:.76rem;font-weight:800;letter-spacing:.2em;color:var(--s88-sky);text-transform:uppercase;margin:0 0 8px}
+
+/* ===== 焦点内容 M2 ===== */
+.s88-focus-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:26px;align-items:start}
+.s88-focus-main{
+  background:#fff;border:1px solid var(--s88-line);border-radius:var(--s88-radius);overflow:hidden;
+  box-shadow:var(--s88-shadow);transition:transform .22s,box-shadow .22s;
+}
+.s88-focus-main:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(31,42,68,.14)}
+.s88-focus-main .s88-thumb{aspect-ratio:16/9;overflow:hidden}
+.s88-thumb svg{width:100%;height:100%;display:block}
+.s88-focus-main .s88-focus-body{padding:20px 22px 22px}
+.s88-focus-body h3{margin:0 0 8px;font-size:1.24rem;line-height:1.4}
+.s88-focus-body p{margin:0 0 14px;color:var(--s88-ink-soft);font-size:.92rem}
+.s88-focus-list{display:grid;gap:14px}
+.s88-mini-card{
+  background:#fff;border:1px solid var(--s88-line);border-radius:14px;padding:14px 16px;
+  display:flex;gap:12px;align-items:flex-start;transition:border-color .18s,transform .18s;
+}
+.s88-mini-card:hover{border-color:var(--s88-sky);transform:translateX(3px)}
+.s88-mini-num{
+  flex:0 0 auto;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+  font-weight:800;font-size:.9rem;color:#fff;background:var(--s88-ink);
+}
+.s88-mini-card:nth-child(2) .s88-mini-num{background:var(--s88-sky)}
+.s88-mini-card:nth-child(3) .s88-mini-num{background:var(--s88-mint)}
+.s88-mini-card h3{margin:0 0 4px;font-size:1rem;line-height:1.45}
+.s88-mini-card p{margin:0;font-size:.83rem;color:var(--s88-muted)}
+.s88-meta{display:flex;gap:10px;flex-wrap:wrap;font-size:.78rem;color:var(--s88-muted);align-items:center}
+.s88-meta b{color:var(--s88-ink-soft);font-weight:700}
+
+/* 标签 */
+.s88-chip{
+  display:inline-block;padding:2px 10px;border-radius:999px;font-size:.72rem;font-weight:700;
+  background:#eef2fb;color:var(--s88-sky);letter-spacing:.02em;
+}
+.s88-chip-coral{background:#ffeee9;color:#d94a2b}
+.s88-chip-mint{background:#e6f7f2;color:#1d8a6f}
+.s88-chip-sun{background:#fff5db;color:#a97a06}
+
+/* ===== 视频流 M3（单列图文列表） ===== */
+.s88-video-list{display:grid;gap:16px}
+.s88-video-item{
+  display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:20px;
+  background:#fff;border:1px solid var(--s88-line);border-radius:var(--s88-radius);padding:16px;
+  transition:box-shadow .22s,transform .22s,border-color .18s;
+}
+.s88-video-item:hover{box-shadow:var(--s88-shadow);transform:translateY(-2px);border-color:#cfd8ee}
+.s88-video-item .s88-thumb{aspect-ratio:16/9;border-radius:12px;overflow:hidden}
+.s88-video-info h3{margin:0 0 6px;font-size:1.08rem;line-height:1.45}
+.s88-video-info p{margin:0 0 10px;font-size:.88rem;color:var(--s88-ink-soft)}
+.s88-video-foot{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.s88-act{
+  border:1px solid var(--s88-line);background:#fff;border-radius:999px;padding:5px 12px;
+  font-size:.78rem;font-weight:700;color:var(--s88-ink-soft);display:inline-flex;align-items:center;gap:5px;
+  transition:background .16s,color .16s,border-color .16s;
+}
+.s88-act:hover{border-color:var(--s88-sky);color:var(--s88-sky)}
+.s88-act.s88-liked{background:#ffeee9;border-color:#ffc4b5;color:#d94a2b}
+.s88-act.s88-saved{background:#fff5db;border-color:#ffe19a;color:#a97a06}
+
+/* ===== 关键词解析 M15 ===== */
+.s88-parse{
+  background:#fff;border:1px solid var(--s88-line);border-radius:20px;padding:30px 32px;box-shadow:var(--s88-shadow);
+}
+.s88-parse h2{margin:0 0 6px;font-size:clamp(1.4rem,2.4vw,1.85rem)}
+.s88-parse > p.s88-lead{color:var(--s88-muted);margin:0 0 20px;font-size:.9rem}
+.s88-parse h3{
+  margin:26px 0 10px;font-size:1.08rem;display:flex;align-items:center;gap:9px;
+}
+.s88-parse h3::before{
+  content:"";width:9px;height:9px;border-radius:3px;background:var(--s88-coral);flex:0 0 auto;transform:rotate(45deg);
+}
+.s88-parse p{margin:0 0 12px;color:var(--s88-ink-soft);font-size:.93rem;text-align:justify}
+.s88-parse-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:18px 0 4px}
+.s88-parse-box{background:#f7f9ff;border:1px solid #e6ecf9;border-radius:12px;padding:14px}
+.s88-parse-box b{display:block;font-size:.88rem;margin-bottom:4px}
+.s88-parse-box span{font-size:.8rem;color:var(--s88-muted)}
+
+/* ===== 专题 M4 ===== */
+.s88-topic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:20px}
+.s88-topic{
+  background:#fff;border:1px solid var(--s88-line);border-radius:var(--s88-radius);overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s;
+}
+.s88-topic:hover{transform:translateY(-4px);box-shadow:var(--s88-shadow)}
+.s88-topic .s88-thumb{aspect-ratio:16/9}
+.s88-topic-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.s88-topic-body h3{margin:0;font-size:1.04rem}
+.s88-topic-body ol{margin:0;padding-left:18px;font-size:.84rem;color:var(--s88-ink-soft);display:grid;gap:5px}
+.s88-topic-state{display:flex;justify-content:space-between;align-items:center;font-size:.76rem;color:var(--s88-muted);margin-top:auto;padding-top:8px;border-top:1px dashed var(--s88-line)}
+
+/* ===== 作者 M5（双列简介） ===== */
+.s88-author-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.s88-author{
+  background:#fff;border:1px solid var(--s88-line);border-radius:var(--s88-radius);padding:18px 20px;
+  display:flex;gap:14px;align-items:flex-start;transition:border-color .18s,transform .18s;
+}
+.s88-author:hover{border-color:#cfd8ee;transform:translateY(-2px)}
+.s88-avatar{
+  width:56px;height:56px;border-radius:16px;flex:0 0 auto;display:grid;place-items:center;
+  color:#fff;font-weight:800;font-size:1.24rem;letter-spacing:.02em;
+}
+.s88-avatar-a{background:linear-gradient(140deg,#ff6b4a,#ffb04d)}
+.s88-avatar-b{background:linear-gradient(140deg,#2f7fd1,#63c7ee)}
+.s88-avatar-c{background:linear-gradient(140deg,#2fae8f,#8fd9c1)}
+.s88-avatar-d{background:linear-gradient(140deg,#8b5cf6,#c4a6ff)}
+.s88-avatar-e{background:linear-gradient(140deg,#d94a72,#ffa3b8)}
+.s88-author-info h3{margin:0 0 2px;font-size:1.02rem}
+.s88-author-info .s88-author-field{font-size:.78rem;color:var(--s88-coral);font-weight:700;letter-spacing:.03em}
+.s88-author-info p{margin:7px 0 10px;font-size:.85rem;color:var(--s88-ink-soft)}
+.s88-author-nums{display:flex;gap:12px;font-size:.76rem;color:var(--s88-muted);flex-wrap:wrap}
+.s88-author-nums b{color:var(--s88-ink)}
+.s88-author-btn{
+  border:0;background:none;color:var(--s88-sky);font-weight:700;font-size:.78rem;padding:0;text-decoration:underline;
+  text-underline-offset:3px;
+}
+
+/* ===== 评论 M8（双列短评） ===== */
+.s88-cmt-summary{
+  display:flex;gap:22px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--s88-line);
+  border-radius:var(--s88-radius);padding:18px 22px;margin-bottom:20px;
+}
+.s88-score{display:flex;align-items:baseline;gap:8px}
+.s88-score b{font-size:2.3rem;line-height:1}
+.s88-score span{color:var(--s88-muted);font-size:.82rem}
+.s88-score-bars{display:grid;gap:6px;flex:1 1 240px;min-width:0}
+.s88-bar{display:grid;grid-template-columns:52px minmax(0,1fr) 34px;gap:8px;align-items:center;font-size:.74rem;color:var(--s88-muted)}
+.s88-bar i{height:7px;border-radius:99px;background:#eef2fb;display:block;overflow:hidden}
+.s88-bar i b{display:block;height:100%;background:linear-gradient(90deg,var(--s88-sun),var(--s88-coral));border-radius:99px}
+.s88-cmt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.s88-cmt{
+  background:#fff;border:1px solid var(--s88-line);border-radius:14px;padding:16px 18px;
+  display:flex;flex-direction:column;gap:8px;
+}
+.s88-cmt-top{display:flex;align-items:center;gap:10px}
+.s88-cmt-top .s88-avatar{width:36px;height:36px;border-radius:11px;font-size:.86rem}
+.s88-cmt-top b{font-size:.88rem}
+.s88-cmt-top small{color:var(--s88-muted);font-size:.72rem;display:block}
+.s88-cmt p{margin:0;font-size:.87rem;color:var(--s88-ink-soft)}
+.s88-cmt-foot{display:flex;gap:10px;align-items:center;font-size:.74rem;color:var(--s88-muted);margin-top:auto;padding-top:6px}
+.s88-cmt-foot button{border:0;background:none;color:var(--s88-muted);font-size:.74rem;padding:0;display:inline-flex;gap:4px;align-items:center}
+.s88-cmt-foot button:hover{color:var(--s88-coral)}
+
+/* ===== 企业动态 M10 ===== */
+.s88-news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.s88-news{
+  background:#fff;border-left:4px solid var(--s88-sky);border-radius:10px;padding:16px 18px;
+  box-shadow:0 4px 14px rgba(31,42,68,.05);
+}
+.s88-news:nth-child(2){border-left-color:var(--s88-coral)}
+.s88-news:nth-child(3){border-left-color:var(--s88-mint)}
+.s88-news:nth-child(4){border-left-color:var(--s88-sun)}
+.s88-news time{font-size:.74rem;color:var(--s88-muted);font-weight:700;letter-spacing:.04em}
+.s88-news h3{margin:6px 0 6px;font-size:.98rem;line-height:1.45}
+.s88-news p{margin:0;font-size:.83rem;color:var(--s88-ink-soft)}
+
+/* ===== FAQ M12 ===== */
+.s88-faq{display:grid;gap:12px}
+.s88-faq details{
+  background:#fff;border:1px solid var(--s88-line);border-radius:12px;padding:14px 18px;
+  transition:border-color .18s;
+}
+.s88-faq details[open]{border-color:var(--s88-sky)}
+.s88-faq summary{
+  cursor:pointer;font-weight:700;font-size:.95rem;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.s88-faq summary::-webkit-details-marker{display:none}
+.s88-faq summary::after{content:"+";color:var(--s88-coral);font-size:1.2rem;font-weight:800;line-height:1}
+.s88-faq details[open] summary::after{content:"–"}
+.s88-faq p{margin:10px 0 0;font-size:.86rem;color:var(--s88-ink-soft)}
+
+/* ===== 合作墙 M11 ===== */
+.s88-partner-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+.s88-partner{
+  background:#fff;border:1px solid var(--s88-line);border-radius:12px;padding:14px;
+  display:flex;align-items:center;gap:10px;font-weight:700;font-size:.88rem;
+}
+.s88-partner i{
+  width:30px;height:30px;border-radius:8px;flex:0 0 auto;display:inline-block;
+}
+.s88-partner:nth-child(1) i{background:linear-gradient(135deg,#ff6b4a,#ffc94d)}
+.s88-partner:nth-child(2) i{background:linear-gradient(135deg,#2f7fd1,#63c7ee)}
+.s88-partner:nth-child(3) i{background:linear-gradient(135deg,#2fae8f,#a5e3d0)}
+.s88-partner:nth-child(4) i{background:linear-gradient(135deg,#8b5cf6,#d3bdfc)}
+
+/* ===== 投稿 / 联系 ===== */
+.s88-join{
+  background:linear-gradient(120deg,#1f2a44,#2b3a5e 60%,#31456f);color:#eaf0fb;border-radius:22px;
+  padding:34px 32px;display:flex;gap:26px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+}
+.s88-join h2{margin:0 0 8px;color:#fff;font-size:clamp(1.3rem,2.3vw,1.7rem)}
+.s88-join p{margin:0;color:#b9c6e0;font-size:.9rem;max-width:560px}
+.s88-join-actions{display:flex;gap:10px;flex-wrap:wrap}
+
+/* ===== 页脚 ===== */
+.s88-footer{background:#151d30;color:#aab7d0;padding:44px 0 26px;font-size:.85rem}
+.s88-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:28px}
+.s88-footer h3{color:#fff;font-size:.92rem;margin:0 0 12px;letter-spacing:.04em}
+.s88-footer p{margin:0 0 10px;line-height:1.8}
+.s88-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.s88-footer a:hover{color:var(--s88-sun)}
+.s88-footer .s88-logo-txt{color:#fff}
+.s88-footer .s88-logo-txt small{color:#7f8dab}
+.s88-footer-bottom{
+  border-top:1px solid #26314a;margin-top:28px;padding-top:18px;display:flex;justify-content:space-between;gap:14px;
+  flex-wrap:wrap;font-size:.78rem;color:#7f8dab;
+}
+
+/* ===== 回到顶部 & Toast & 弹窗 ===== */
+.s88-totop{
+  position:fixed;right:20px;bottom:24px;width:46px;height:46px;border-radius:14px;border:0;
+  background:var(--s88-ink);color:#fff;font-size:1.1rem;display:grid;place-items:center;
+  box-shadow:0 10px 24px rgba(31,42,68,.28);opacity:0;pointer-events:none;transform:translateY(10px);
+  transition:opacity .22s,transform .22s;z-index:80;
+}
+.s88-totop.s88-show{opacity:1;pointer-events:auto;transform:none}
+.s88-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);background:#151d30;color:#fff;
+  padding:10px 20px;border-radius:999px;font-size:.85rem;font-weight:600;opacity:0;pointer-events:none;
+  transition:opacity .22s,transform .22s;z-index:120;box-shadow:0 12px 30px rgba(0,0,0,.28);
+}
+.s88-toast.s88-show{opacity:1;transform:translate(-50%,0)}
+.s88-modal{
+  position:fixed;inset:0;background:rgba(16,22,38,.55);display:none;place-items:center;z-index:130;padding:20px;
+}
+.s88-modal.s88-on{display:grid}
+.s88-modal-card{
+  background:#fff;border-radius:18px;max-width:520px;width:100%;padding:26px 26px 22px;position:relative;
+  box-shadow:0 30px 70px rgba(0,0,0,.3);max-height:86vh;overflow:auto;
+}
+.s88-modal-card h3{margin:0 0 6px;font-size:1.16rem}
+.s88-modal-card p{margin:0 0 14px;font-size:.87rem;color:var(--s88-ink-soft)}
+.s88-modal-close{
+  position:absolute;right:14px;top:12px;border:0;background:#f2f5fc;border-radius:10px;width:32px;height:32px;
+  font-size:1rem;color:var(--s88-ink);display:grid;place-items:center;
+}
+.s88-modal textarea,.s88-modal input[type=text]{
+  width:100%;border:1px solid var(--s88-line);border-radius:12px;padding:10px 12px;font-size:.88rem;
+  font-family:inherit;outline:none;margin-bottom:12px;resize:vertical;
+}
+.s88-modal textarea:focus,.s88-modal input[type=text]:focus{border-color:var(--s88-sky)}
+.s88-modal-actions{display:flex;gap:10px;justify-content:flex-end}
+
+/* ===== 响应式 ===== */
+@media (max-width:1020px){
+  .s88-hero-grid{grid-template-columns:1fr;gap:30px}
+  .s88-focus-grid{grid-template-columns:1fr}
+  .s88-footer-grid{grid-template-columns:1fr 1fr}
+  .s88-header .s88-wrap{min-height:64px}
+}
+@media (max-width:820px){
+  :root{--s88-head-h:110px}
+  .s88-nav{display:none}
+  .s88-search{display:none}
+  .s88-burger{display:flex}
+  .s88-header .s88-wrap{justify-content:space-between}
+  .s88-header{top:38px}
+  .s88-video-item{grid-template-columns:1fr}
+  .s88-hero-float{position:static;margin-top:12px;max-width:100%}
+  .s88-parse{padding:22px 18px}
+  .s88-join{padding:26px 20px}
+  .s88-topbar-text{white-space:normal}
+}
+@media (max-width:560px){
+  .s88-stats{grid-template-columns:1fr;}
+  .s88-stat{display:flex;align-items:baseline;gap:10px}
+  .s88-footer-grid{grid-template-columns:1fr}
+  .s88-cmt-summary{padding:14px}
+  .s88-hero{padding:34px 0 40px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- ===== S1 公告条（置顶） ===== -->
+<div class="s88-topbar" role="region" aria-label="站内公告">
+  <div class="s88-wrap">
+    <span class="s88-topbar-tag">官方发布</span>
+    <span class="s88-topbar-text">「色彩叙事·冬季命题」创作挑战已开放报名，上传即享首页推荐位；第 24 期创作者访谈同步上线。</span>
+    <a class="s88-topbar-link" href="#sec-join">立即报名 →</a>
+  </div>
+</div>
+
+<!-- ===== 页头（与公告条一同吸顶） ===== -->
+<header class="s88-header">
+  <div class="s88-wrap">
+    <a class="s88-logo" href="#sec-hero" aria-label="色88官方网站首页">
+      <span class="s88-logo-mark" aria-hidden="true"><span></span></span>
+      <span class="s88-logo-txt">色88<small>SE88 VIDEO</small></span>
+    </a>
+    <nav class="s88-nav" aria-label="主导航">
+      <a href="#sec-focus">焦点</a>
+      <a href="#sec-videos">视频</a>
+      <a href="#sec-parse">关键词解析</a>
+      <a href="#sec-topics">专题企划</a>
+      <a href="#sec-authors">创作者</a>
+      <a href="#sec-comments">口碑</a>
+      <a href="#sec-news">企业动态</a>
+      <a href="#sec-faq">帮助</a>
+    </nav>
+    <div class="s88-search-wrap">
+      <div class="s88-search">
+        <label class="s88-sr" for="s88SearchInput">搜索色88站内内容</label>
+        <input id="s88SearchInput" type="text" placeholder="搜索视频 / 创作者 / 专题" autocomplete="off">
+        <button type="button" id="s88SearchBtn">搜索</button>
+      </div>
+      <div class="s88-search-tip" id="s88SearchTip" role="status" aria-live="polite"></div>
+    </div>
+    <button class="s88-burger" id="s88Burger" type="button" aria-expanded="false" aria-controls="s88MobileNav" aria-label="展开导航">☰</button>
+  </div>
+  <div class="s88-mobile-nav" id="s88MobileNav">
+    <div class="s88-wrap">
+      <ul>
+        <li><a href="#sec-focus">焦点内容</a></li>
+        <li><a href="#sec-videos">热门视频流</a></li>
+        <li><a href="#sec-parse">色88关键词解析</a></li>
+        <li><a href="#sec-topics">专题与企划</a></li>
+        <li><a href="#sec-authors">创作者矩阵</a></li>
+        <li><a href="#sec-comments">用户口碑</a></li>
+        <li><a href="#sec-news">企业动态</a></li>
+        <li><a href="#sec-faq">常见问题</a></li>
+        <li><a href="#sec-join">投稿与联系</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== S2 首屏（左文右侧大图与数据条，4:6） ===== -->
+<section class="s88-hero" id="sec-hero">
+  <div class="s88-wrap s88-hero-grid">
+    <div class="s88-hero-copy">
+      <span class="s88-kicker"><i></i>色88 官方网站 · 品牌视频门户</span>
+      <h1>色88<em>色彩影像</em>视频品牌</h1>
+      <p class="s88-hero-sub">官方出品 · 正版高清 · 原创内容生态</p>
+      <p class="s88-hero-intro">
+        色88是一家专注色彩影像与原创短片的视频品牌企业，以“让每一种颜色都被看见”为使命。作为官方网站，我们持续运营高品质内容生态，为创作者提供上传、下载、投稿与共创的完整链路，为观众提供值得信赖的精品内容与真实温暖的陪伴。
+      </p>
+      <div class="s88-hero-actions">
+        <a class="s88-btn s88-btn-primary" href="#sec-videos">▶ 观看品牌精选</a>
+        <a class="s88-btn s88-btn-ghost" href="#sec-authors">认识创作者</a>
+        <a class="s88-btn s88-btn-coral" href="#sec-join">投稿报名</a>
+      </div>
+      <div class="s88-stats">
+        <div class="s88-stat"><b>2,860+</b><span>原创视频存量（官方发布）</span></div>
+        <div class="s88-stat"><b>18.7 万</b><span>社区创作者与订阅用户</span></div>
+        <div class="s88-stat"><b>96.4%</b><span>用户好评率（口碑持续运营）</span></div>
+      </div>
+    </div>
+    <div class="s88-hero-visual">
+      <div class="s88-hero-shot">
+        <svg viewBox="0 0 800 600" role="img" aria-label="色88品牌主视觉：三原色光影在深色影棚中交汇形成同心色环">
+          <defs>
+            <linearGradient id="s88heroBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1b2440"/>
+              <stop offset="1" stop-color="#33456f"/>
+            </linearGradient>
+            <radialGradient id="s88heroC1" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#ff6b4a" stop-opacity="0.95"/>
+              <stop offset="1" stop-color="#ff6b4a" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="s88heroC2" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#2f7fd1" stop-opacity="0.9"/>
+              <stop offset="1" stop-color="#2f7fd1" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="s88heroC3" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#ffc94d" stop-opacity="0.9"/>
+              <stop offset="1" stop-color="#ffc94d" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="800" height="600" fill="url(#s88heroBg)"/>
+          <g opacity="0.5">
+            <circle cx="230" cy="220" r="200" fill="url(#s88heroC1)"/>
+            <circle cx="560" cy="250" r="210" fill="url(#s88heroC2)"/>
+            <circle cx="400" cy="430" r="220" fill="url(#s88heroC3)"/>
+          </g>
+          <g fill="none" stroke="#ffffff" stroke-opacity="0.28">
+            <circle cx="400" cy="320" r="150"/>
+            <circle cx="400" cy="320" r="205"/>
+            <circle cx="400" cy="320" r="260"/>
+          </g>
+          <g transform="translate(400 320)">
+            <circle r="72" fill="#0f1629" stroke="#ffffff" stroke-opacity="0.5"/>
+            <path d="M-22 -26 L34 0 L-22 26 Z" fill="#ffffff" fill-opacity="0.92"/>
+          </g>
+          <g font-family="system-ui,sans-serif" fill="#eaf0fb" fill-opacity="0.85" font-size="20" font-weight="700">
+            <text x="48" y="74">SE88 · COLOR FILM STUDIO</text>
+          </g>
+          <g font-family="system-ui,sans-serif" fill="#ffc94d" font-size="16" font-weight="600">
+            <text x="48" y="102">色彩叙事 / 原创短片 / 正版高清</text>
+          </g>
+          <g stroke="#ffffff" stroke-opacity="0.18">
+            <line x1="48" y1="520" x2="752" y2="520"/>
+          </g>
+          <g font-family="system-ui,sans-serif" font-size="15" fill="#b9c6e0">
+            <text x="48" y="548">EP.024  冬季色彩命题创作挑战 · 官方企划</text>
+            <text x="640" y="548">4K / HDR</text>
+          </g>
+        </svg>
+      </div>
+      <div class="s88-hero-float">
+        <span class="s88-dot" aria-hidden="true"></span>
+        <span><b>本期焦点：三原色的城市夜行</b><small>色88官方 · 4K 高清首发 · 12.6 万次播放</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== M2 焦点内容 ===== -->
+<section class="s88-sec s88-sec-alt" id="sec-focus">
+  <div class="s88-wrap">
+    <div class="s88-sec-head">
+      <div>
+        <p class="s88-tagline">Focus Selection</p>
+        <h2>焦点内容 <span>· 色88本周重点推荐</span></h2>
+        <p>由官方编辑部与社区共创评审团共同挑选，涵盖色彩美学、城市影像与创作幕后，是色88平台精品内容的集中呈现。</p>
+      </div>
+      <a class="s88-btn s88-btn-ghost" href="#sec-videos">查看全部视频</a>
+    </div>
+
+    <div class="s88-focus-grid">
+      <article class="s88-focus-main">
+        <div class="s88-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="焦点视频《三原色的城市夜行》封面：雨夜街道霓虹倒映在积水中">
+            <defs>
+              <linearGradient id="s88focusSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#121a2e"/>
+                <stop offset="1" stop-color="#28365c"/>
+              </linearGradient>
+              <linearGradient id="s88focusRoad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#1d2743"/>
+                <stop offset="1" stop-color="#0d1324"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="360" fill="url(#s88focusSky)"/>
+            <g>
+              <rect x="40" y="70" width="90" height="180" fill="#1a2340"/>
+              <rect x="150" y="40" width="110" height="210" fill="#212c4d"/>
+              <rect x="280" y="90" width="80" height="160" fill="#18213c"/>
+              <rect x="380" y="55" width="120" height="195" fill="#242f52"/>
+              <rect x="520" y="85" width="80" height="165" fill="#1a2340"/>
+            </g>
+            <g opacity="0.9">
+              <rect x="58" y="90" width="18" height="26" fill="#ff6b4a"/>
+              <rect x="88" y="128" width="18" height="26" fill="#ffc94d"/>
+              <rect x="170" y="70" width="20" height="30" fill="#63c7ee"/>
+              <rect x="210" y="120" width="20" height="30" fill="#ff6b4a"/>
+              <rect x="298" y="110" width="18" height="28" fill="#ffc94d"/>
+              <rect x="404" y="80" width="22" height="32" fill="#8ce0c8"/>
+              <rect x="446" y="140" width="22" height="32" fill="#63c7ee"/>
+              <rect x="540" y="110" width="18" height="28" fill="#ff6b4a"/>
+            </g>
+            <rect y="250" width="640" height="110" fill="url(#s88focusRoad)"/>
+            <g opacity="0.55">
+              <rect x="60" y="256" width="22" height="96" fill="#ff6b4a"/>
+              <rect x="180" y="256" width="22" height="96" fill="#ffc94d"/>
+              <rect x="320" y="256" width="22" height="96" fill="#63c7ee"/>
+              <rect x="470" y="256" width="22" height="96" fill="#8ce0c8"/>
+            </g>
+            <g fill="none" stroke="#eaf0fb" stroke-opacity="0.55" stroke-width="2">
+              <path d="M300 250 L320 250 L336 360 L288 360 Z"/>
+            </g>
+            <g transform="translate(320 200)">
+              <circle r="30" fill="#0f1629" fill-opacity="0.55" stroke="#fff" stroke-opacity="0.6"/>
+              <path d="M-9 -12 L14 0 L-9 12 Z" fill="#ffffff"/>
+            </g>
+            <text x="24" y="330" font-family="system-ui,sans-serif" font-size="15" fill="#eaf0fb" fill-opacity="0.9" font-weight="700">EP.021 · 官方高清首发</text>
+          </svg>
+        </div>
+        <div class="s88-focus-body">
+          <div class="s88-meta">
+            <span class="s88-chip s88-chip-coral">城市探索</span>
+            <span class="s88-chip">创作幕后</span>
+            <b>18:42</b>
+          </div>
+          <h3>三原色的城市夜行：用一盏灯重拍熟悉的街道</h3>
+          <p>色88官方制作组连拍 11 个雨夜，把红、蓝、黄三原色投进老街墙面与积水倒影，讲一个普通路口如何被光线改写的故事。片中所有灯具与调色参数全程公开，是理解色88影像语言的一支入门片。</p>
+          <div class="s88-video-foot">
+            <button class="s88-act" type="button" data-s88-like>👍 点赞 <b>12,406</b></button>
+            <button class="s88-act" type="button" data-s88-save>☆ 收藏</button>
+            <button class="s88-act" type="button" data-s88-share>🔗 复制链接</button>
+            <button class="s88-act" type="button" data-s88-author="林见色">作者</button>
+          </div>
+        </div>
+      </article>
+
+      <div class="s88-focus-list">
+        <article class="s88-mini-card">
+          <span class="s88-mini-num">01</span>
+          <div>
+            <h3>把旧楼刷成会呼吸的墙：一次社区色彩改造记录</h3>
+            <p>色88与街区居民共同完成 42 米长的墙面，从调色到上墙历时 19 天。重点在于：如何让颜色被邻居接受。</p>
+            <div class="s88-meta"><span class="s88-chip">在地文化</span><span>· 24:10</span><span>· 播放 8.9 万</span></div>
+          </div>
+        </article>
+        <article class="s88-mini-card">
+          <span class="s88-mini-num">02</span>
+          <div>
+            <h3>一镜到底的色卡挑战：30 位创作者，30 种颜色</h3>
+            <p>同一段剧本、同一盏灯，每人只领一种颜色。结果差异远超预期，也让“色88”的多元气质得以具象呈现。</p>
+            <div class="s88-meta"><span class="s88-chip">挑战</span><span>· 15:03</span><span>· 播放 6.4 万</span></div>
+          </div>
+        </article>
+        <article class="s88-mini-card">
+          <span class="s88-mini-num">03</span>
+          <div>
+            <h3>导演手记：为什么我们坚持用自然光做主光源</h3>
+            <p>色88制作总监谈光影纪律：可控的少，真实的更多。这是品牌影像风格的底层取舍。</p>
+            <div class="s88-meta"><span class="s88-chip">人物访谈</span><span>· 09:28</span><span>· 播放 4.2 万</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== M3 热门视频流（单列图文列表） ===== -->
+<section class="s88-sec" id="sec-videos">
+  <div class="s88-wrap">
+    <div class="s88-sec-head">
+      <div>
+        <p class="s88-tagline">Popular Videos</p>
+        <h2>热门视频流 <span>· 色88官方与社区共创</span></h2>
+        <p>按近 7 日播放与互动综合排序，覆盖教程干货、深度测评、生活记录与情绪影像。支持点赞、收藏与分享，持续运营的社区内容生态由你参与塑造。</p>
+      </div>
+    </div>
+
+    <div class="s88-video-list">
+      <article class="s88-video-item">
+        <div class="s88-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="视频《三分钟调出电影感青橙色》封面：调色界面与两色渐变对照">
+            <defs>
+              <linearGradient id="s88v1a" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#0f2a33"/>
+                <stop offset="1" stop-color="#2b7a6e"/>
+              </linearGradient>
+              <linearGradient id="s88v1b" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#ff8a4a"/>
+                <stop offset="1" stop-color="#ffd39b"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="360" fill="url(#s88v1a)"/>
+            <rect x="40" y="46" width="250" height="180" rx="8" fill="#ffffff" fill-opacity="0.1"/>
+            <g stroke="#ffffff" stroke-opacity="0.35" fill="none">
+              <rect x="56" y="62" width="218" height="148" rx="4"/>
+            </g>
+            <g stroke="#ff8a4a" stroke-width="3" fill="none">
+              <path d="M56 190 C110 120 160 200 274 96"/>
+            </g>
+            <rect x="330" y="46" width="250" height="180" rx="8" fill="url(#s88v1b)" fill-opacity="0.85"/>
+            <g fill="#1b2440" fill-opacity="0.6">
+              <rect x="352" y="70" width="120" height="14" rx="7"/>
+              <rect x="352" y="96" width="180" height="10" rx="5"/>
+              <rect x="352" y="116" width="150" height="10" rx="5"/>
+              <rect x="352" y="136" width="196" height="10" rx="5"/>
+            </g>
+            <g fill="#eaf0fb" font-family="system-ui,sans-serif">
+              <text x="40" y="278" font-size="22" font-weight="800">青 / 橙 · 双色对照</text>
+              <text x="40" y="310" font-size="15" fill-opacity="0.7">色88 图像实验室 · 教程干货</text>
+            </g>
+            <g transform="translate(560 290)">
+              <circle r="26" fill="#ffffff" fill-opacity="0.16"/>
+              <path d="M-8 -11 L12 0 L-8 11 Z" fill="#fff"/>
+            </g>
+          </svg>
+        </div>
+        <div class="s88-video-info">
+          <div class="s88-meta"><span class="s88-chip s88-chip-mint">教程干货</span><b>12:36</b><span>发布于 2026-11-18</span></div>
+          <h3>三分钟调出电影感青橙色：色88图像实验室的第 12 次实验</h3>
+          <p>从素材预处理到曲线微调，完整演示一套可复用的调色步骤，附三组不同光线的参数对照表，适合刚上手的新创作者。</p>
+          <div class="s88-meta"><span>作者 <b>@调色师阿岚</b></span><span>播放 15.2 万</span><span>点赞 6,824</span><span>收藏 3,190</span></div>
+          <div class="s88-video-foot">
+            <button class="s88-act" type="button" data-s88-like>👍 点赞 <b>6,824</b></button>
+            <button class="s88-act" type="button" data-s88-save>☆ 收藏</button>
+            <button class="s88-act" type="button" data-s88-comment>💬 评论</button>
+            <button class="s88-act" type="button" data-s88-author="调色师阿岚">作者</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="s88-video-item">
+        <div class="s88-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="视频《旧城区六个取景地实测》封面：俯视街区地图与相机取景框">
+            <rect width="640" height="360" fill="#f0e9dd"/>
+            <g stroke="#c9bda6" stroke-width="2">
+              <path d="M0 120 H640 M0 240 H640 M140 0 V360 M400 0 V360"/>
+            </g>
+            <g fill="#dcd2be">
+              <rect x="24" y="26" width="86" height="70" rx="4"/>
+              <rect x="168" y="26" width="110" height="70" rx="4"/>
+              <rect x="436" y="26" width="90" height="70" rx="4"/>
+              <rect x="560" y="26" width="60" height="70" rx="4"/>
+              <rect x="24" y="150" width="86" height="66" rx="4"/>
+              <rect x="436" y="150" width="120" height="66" rx="4"/>
+              <rect x="168" y="270" width="100" height="66" rx="4"/>
+              <rect x="470" y="270" width="140" height="66" rx="4"/>
+            </g>
+            <g stroke="#2f7fd1" stroke-width="5" fill="none" stroke-linecap="round">
+              <path d="M40 108 L40 330 M400 108 L400 330 M300 108 L300 330"/>
+            </g>
+            <g fill="#ff6b4a">
+              <circle cx="200" cy="200" r="11"/>
+              <circle cx="330" cy="270" r="11"/>
+              <circle cx="520" cy="180" r="11"/>
+            </g>
+            <g stroke="#1f2a44" stroke-width="5" fill="none">
+              <rect x="228" y="112" width="184" height="112" rx="6"/>
+              <path d="M300 112 V88 H340 V112"/>
+            </g>
+            <text x="24" y="344" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#5a4f3b">实测取景地 · 6 个点位</text>
+          </svg>
+        </div>
+        <div class="s88-video-info">
+          <div class="s88-meta"><span class="s88-chip">城市探索</span><b>21:08</b><span>发布于 2026-11-15</span></div>
+          <h3>旧城区六个取景地实测：清晨、正午与黄昏的光完全不同</h3>
+          <p>带着同一台相机在同一条街走了三趟，记录一天里六个点位的色温变化，最后给出拍摄时间建议表，可直接拿去用。</p>
+          <div class="s88-meta"><span>作者 <b>@街拍小满</b></span><span>播放 9.8 万</span><span>点赞 4,512</span><span>收藏 2,067</span></div>
+          <div class="s88-video-foot">
+            <button class="s88-act" type="button" data-s88-like>👍 点赞 <b>4,512</b></button>
+            <button class="s88-act" type="button" data-s88-save>☆ 收藏</button>
+            <button class="s88-act" type="button" data-s88-comment>💬 评论</button>
+            <button class="s88-act" type="button" data-s88-author="街拍小满">作者</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="s88-video-item">
+        <div class="s88-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="视频《一块旧木板的十二种颜色》封面：木纹板上排列十二块彩色色块">
+            <rect width="640" height="360" fill="#3a2c22"/>
+            <g stroke="#5b4433" stroke-width="1.5">
+              <path d="M0 60 H640 M0 110 H640 M0 160 H640 M0 210 H640 M0 260 H640 M0 310 H640"/>
+            </g>
+            <g>
+              <rect x="26" y="120" width="46" height="46" rx="5" fill="#ff6b4a"/>
+              <rect x="80" y="120" width="46" height="46" rx="5" fill="#ff9a4a"/>
+              <rect x="134" y="120" width="46" height="46" rx="5" fill="#ffc94d"/>
+              <rect x="188" y="120" width="46" height="46" rx="5" fill="#c7e06b"/>
+              <rect x="242" y="120" width="46" height="46" rx="5" fill="#7adca0"/>
+              <rect x="296" y="120" width="46" height="46" rx="5" fill="#4cc9c0"/>
+              <rect x="350" y="120" width="46" height="46" rx="5" fill="#63b8ee"/>
+              <rect x="404" y="120" width="46" height="46" rx="5" fill="#7d97e8"/>
+              <rect x="458" y="120" width="46" height="46" rx="5" fill="#a98ae8"/>
+              <rect x="512" y="120" width="46" height="46" rx="5" fill="#e58ac0"/>
+              <rect x="566" y="120" width="46" height="46" rx="5" fill="#e8748a"/>
+              <rect x="512" y="188" width="46" height="46" rx="5" fill="#f7f0e4"/>
+            </g>
+            <text x="26" y="86" font-family="system-ui,sans-serif" font-size="20" font-weight="800" fill="#f7f0e4">手作 · 色板实验</text>
+            <text x="26" y="300" font-family="system-ui,sans-serif" font-size="14" fill="#c9b79e">十二种颜料在旧木板上的表现差异</text>
+          </svg>
+        </div>
+        <div class="s88-video-info">
+          <div class="s88-meta"><span class="s88-chip s88-chip-sun">手作 DIY</span><b>16:55</b><span>发布于 2026-11-12</span></div>
+          <h3>一块旧木板的十二种颜色：把废料做成品牌墙饰</h3>
+          <p>从打磨、上色到封蜡，尝试十二种常见颜料在旧木板上的显色差异，最后拼成一面小型色板墙，附耗材清单与用量。</p>
+          <div class="s88-meta"><span>作者 <b>@木头与颜料</b></span><span>播放 7.1 万</span><span>点赞 3,980</span><span>收藏 2,411</span></div>
+          <div class="s88-video-foot">
+            <button class="s88-act" type="button" data-s88-like>👍 点赞 <b>3,980</b></button>
+            <button class="s88-act" type="button" data-s88-save>☆ 收藏</button>
+            <button class="s88-act" type="button" data-s88-comment>💬 评论</button>
+            <button class="s88-act" type="button" data-s88-author="木头与颜料">作者</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="s88-video-item">
+        <div class="s88-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="视频《夜晚的最后一班公交》封面：夜色车窗外流过的暖色灯">
+            <defs>
+              <linearGradient id="s88v4" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#101a33"/>
+                <stop offset="1" stop-color="#3b2a52"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="360" fill="url(#s88v4)"/>
+            <g stroke="#ffc94d" stroke-width="3" stroke-opacity="0.85" stroke-linecap="round">
+              <path d="M0 90 C120 70 220 120 340 96 C440 76 540 110 640 88"/>
+              <path d="M0 160 C130 136 250 186 380 158 C480 136 570 168 640 150"/>
+              <path d="M0 232 C110 208 240 254 360 230 C470 208 560 240 640 222"/>
+            </g>
+            <g fill="#ff6b4a" fill-opacity="0.85">
+              <circle cx="150" cy="88" r="7"/>
+              <circle cx="300" cy="112" r="5"/>
+              <circle cx="470" cy="90" r="6"/>
+            </g>
+            <g stroke="#eaf0fb" stroke-opacity="0.4" stroke-width="10" fill="none" stroke-linecap="round">
+              <path d="M40 330 V246"/>
+              <path d="M110 330 V262"/>
+            </g>
+            <g>
+              <rect x="380" y="240" width="230" height="86" rx="10" fill="#0c1428" fill-opacity="0.7" stroke="#eaf0fb" stroke-opacity="0.28"/>
+              <text x="400" y="272" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#eaf0fb">末班车</text>
+              <text x="400" y="300" font-family="system-ui,sans-serif" font-size="13" fill="#b9c6e0">治愈影像 · 05:44</text>
+            </g>
+          </svg>
+        </div>
+        <div class="s88-video-info">
+          <div class="s88-meta"><span class="s88-chip">治愈影像</span><b>05:44</b><span>发布于 2026-11-09</span></div>
+          <h3>夜晚的最后一班公交：一段没有台词的六分钟</h3>
+          <p>车厢里只有灯光与呼吸声。色88社区投稿作品，记录一位通勤者回家路上的城市色调，被用户称为“最适合睡前看的短片”。</p>
+          <div class="s88-meta"><span>作者 <b>@夜行记阿禾</b></span><span>播放 6.6 万</span><span>点赞 5,210</span><span>收藏 3,845</span></div>
+          <div class="s88-video-foot">
+            <button class="s88-act" type="button" data-s88-like>👍 点赞 <b>5,210</b></button>
+            <button class="s88-act" type="button" data-s88-save>☆ 收藏</button>
+            <button class="s88-act" type="button" data-s88-comment>💬 评论</button>
+            <button class="s88-act" type="button" data-s88-author="夜行记阿禾">作者</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="s88-video-item">
+        <div class="s88-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="视频《三家国产相机横评》封面：三台相机并列与评分条">
+            <rect width="640" height="360" fill="#eef2fb"/>
+            <g fill="#1f2a44">
+              <rect x="40" y="120" width="150" height="110" rx="12"/>
+              <rect x="240" y="120" width="150" height="110" rx="12"/>
+              <rect x="440" y="120" width="150" height="110" rx="12"/>
+            </g>
+            <g fill="#9fb4d8">
+              <circle cx="115" cy="175" r="30"/>
+              <circle cx="315" cy="175" r="30"/>
+              <circle cx="515" cy="175" r="30"/>
+            </g>
+            <g fill="#ff6b4a">
+              <circle cx="115" cy="175" r="15"/>
+              <circle cx="315" cy="175" r="15"/>
+              <circle cx="515" cy="175" r="15"/>
+            </g>
+            <g>
+              <rect x="40" y="60" width="90" height="10" rx="5" fill="#2f7fd1"/>
+              <rect x="240" y="60" width="128" height="10" rx="5" fill="#2fae8f"/>
+              <rect x="440" y="60" width="104" height="10" rx="5" fill="#ffc94d"/>
+            </g>
+            <g font-family="system-ui,sans-serif" fill="#1f2a44" font-weight="700">
+              <text x="40" y="286" font-size="16">A 机</text>
+              <text x="240" y="286" font-size="16">B 机</text>
+              <text x="440" y="286" font-size="16">C 机</text>
+            </g>
+            <text x="40" y="322" font-family="system-ui,sans-serif" font-size="14" fill="#6b7793">色88 深度测评 · 三机同场</text>
+          </svg>
+        </div>
+        <div class="s88-video-info">
+          <div class="s88-meta"><span class="s88-chip s88-chip-coral">深度测评</span><b>28:30</b><span>发布于 2026-11-06</span></div>
+          <h3>三家国产相机横评：直出色与宽容度到底差在哪</h3>
+          <p>同一场景、同一构图、同一天气，逐项对比直出色彩、暗部细节与高感表现，并给出一张按用途选择的决策表。</p>
+          <div class="s88-meta"><span>作者 <b>@器材清单老周</b></span><span>播放 11.4 万</span><span>点赞 4,960</span><span>收藏 3,102</span></div>
+          <div class="s88-video-foot">
+            <button class="s88-act" type="button" data-s88-like>👍 点赞 <b>4,960</b></button>
+            <button class="s88-act" type="button" data-s88-save>☆ 收藏</button>
+            <button class="s88-act" type="button" data-s88-comment>💬 评论</button>
+            <button class="s88-act" type="button" data-s88-author="器材清单老周">作者</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="s88-video-item">
+        <div class="s88-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="视频《孩子眼中的天空是什么颜色》封面：儿童画风格的天空与色笔">
+            <rect width="640" height="360" fill="#dff1fd"/>
+            <circle cx="120" cy="86" r="46" fill="#ffc94d"/>
+            <g fill="#ffffff" fill-opacity="0.95">
+              <circle cx="300" cy="100" r="44"/>
+              <circle cx="352" cy="110" r="34"/>
+              <circle cx="262" cy="118" r="30"/>
+            </g>
+            <g stroke="#8fd97a" stroke-width="8" stroke-linecap="round">
+              <path d="M0 290 H640"/>
+            </g>
+            <g fill="#ff6b4a">
+              <circle cx="90" cy="262" r="22"/>
+              <circle cx="150" cy="272" r="15"/>
+            </g>
+            <g stroke="#2f7fd1" stroke-width="9" stroke-linecap="round">
+              <path d="M420 300 L470 210"/>
+              <path d="M486 300 L536 210"/>
+            </g>
+            <g fill="#2fae8f">
+              <circle cx="560" cy="270" r="26"/>
+            </g>
+            <text x="24" y="56" font-family="system-ui,sans-serif" font-size="20" font-weight="800" fill="#1f2a44">天空是什么颜色？</text>
+            <text x="24" y="326" font-family="system-ui,sans-serif" font-size="14" fill="#3c4a68">亲子成长 · 09:12 · 色88 原创</text>
+          </svg>
+        </div>
+        <div class="s88-video-info">
+          <div class="s88-meta"><span class="s88-chip s88-chip-mint">亲子成长</span><b>09:12</b><span>发布于 2026-11-02</span></div>
+          <h3>孩子眼中的天空是什么颜色：一次午后的色彩提问</h3>
+          <p>我们让 12 位小朋友画出他们看到的天空，答案从橙到紫都有。片尾附家长如何引导孩子观察颜色的三个小练习。</p>
+          <div class="s88-meta"><span>作者 <b>@慢镜头妈妈</b></span><span>播放 5.9 万</span><span>点赞 3,640</span><span>收藏 1,988</span></div>
+          <div class="s88-video-foot">
+            <button class="s88-act" type="button" data-s88-like>👍 点赞 <b>3,640</b></button>
+            <button class="s88-act" type="button" data-s88-save>☆ 收藏</button>
+            <button class="s88-act" type="button" data-s88-comment>💬 评论</button>
+            <button class="s88-act" type="button" data-s88-author="慢镜头妈妈">作者</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== M15 关键词深度解析（≥800字，3个H3） ===== -->
+<section class="s88-sec s88-sec-alt" id="sec-parse">
+  <div class="s88-wrap">
+    <div class="s88-parse">
+      <h2>色88关键词解析：一个视频品牌如何被颜色定义</h2>
+      <p class="s88-lead">本节从品牌命名、内容方法与社区运营三个层面，解释色88作为视频品牌官网的内容逻辑，约 900 字，适合想深入了解平台的创作者与合作伙伴阅读。</p>
+
+      <h3>一、为什么是“色88”：命名里的品牌性格</h3>
+      <p>“色”指向影像最本体的语言。在色88看来，色彩不是后期滤镜，而是拍摄前就要决定的事情：一盏灯的位置、一块墙的材质、一件衣服的饱和度，都会改变观众的第一感受。品牌把“色”放在名字最前，是在向创作者说明，这里最看重的是对画面本身的判断力，而不是单纯的流量技巧。</p>
+      <p>“88”则像两个并排的循环。它既是色彩轮上首尾相接的暗示，也代表色88希望内容持续运转、不断回到起点再出发。作为一家持续运营的视频企业，我们不追求一次性爆款，而是把每周更新、每期专题、每场挑战当作长期节奏。官方网站上的内容库因此不是静态陈列，而是一条可以顺着看下去的曲线：从入门教程到深度访谈，从社区投稿到官方企划，彼此之间有清晰的脉络。</p>
+      <p>对用户而言，这个名字还有一层实用含义：打开色88，你大概率能找到“颜色怎么用”的答案。我们用命名给出承诺，也用每一条视频兑现它。这份一致性，是品牌被记住的起点。</p>
+
+      <h3>二、原创与正版：内容生态的两条底线</h3>
+      <p>色88所有上架内容都经过原创声明与版权核对。官方制作组出品的短片标注完整署名与素材来源，社区投稿在发布前需签署原创承诺，涉及他人音乐、字体与影像的，必须提供可商用授权。平台提供高清下载通道，但下载行为与用途会被记录在账号下，以便在商业合作时追溯授权链路。这套流程看起来繁琐，却让创作者更愿意把重要作品放在色88，也让企业客户敢于把品牌片交给这里的团队。</p>
+      <p>在内容结构上，色88把内容分为三条线。第一条是教程与攻略，解决“怎么做”的问题，例如调色、布光、收音、剪辑节奏；第二条是测评与行业观察，回答“该选什么”“为什么这样选”；第三条是故事与访谈，处理“为什么拍”的问题。三条线并非平行，而是互相引用：一篇调色教程会指向某个访谈里导演的用光偏好，一条测评会回到某支短片的具体镜头。用户顺着链接读下去，往往能从一个技巧走进一套完整的影像观念。</p>
+      <p>值得一提的是社区评审机制。色88每月开放一次公开评审，由创作者代表、编辑与普通用户共同打分，评分维度包含原创性、完成度与可学习性。分数不决定推荐位，但会影响专题入选与创作基金的分配。这套机制运行至今，让平台的口碑建立在具体作品上，而不是宣传语上。</p>
+
+      <h3>三、从社区到品牌：色88的持续运营方法</h3>
+      <p>色88把社区当作内容生态的一部分，而不是宣传渠道。创作者在这里上传作品、参与挑战、互相点评；观众在这里收藏片单、写短评、给作者提修改建议。官方每季度发布一次内容观察，把社区讨论中出现的高频问题整理成选题，再交回给创作者。这种“从社区来、到社区去”的循环，让平台的内容方向始终贴近真实需求。</p>
+      <p>我们也在意内容之外的部分。色88与多所院校的影像社团保持合作，为学生创作者提供设备试用与剪辑工坊；与城市文化机构联合策划在地影像展，把线上作品带到线下空间。这些动作不直接带来播放量，却让品牌在社会责任层面有更扎实的落点。一个视频品牌的价值，最终取决于它是否真的帮助一批人把想拍的东西拍出来。</p>
+      <p>如果你刚接触色88，建议从教程线开始，先掌握基础参数，再去看访谈与专题，理解创作者的选择理由；如果你已经有作品，欢迎通过官方网站的投稿入口提交，参与下一期命题挑战。颜色会变，方法会更新，但色88希望保持的东西很简单：真实、专业、值得信赖，以及对每一帧画面的耐心。</p>
+
+      <div class="s88-parse-grid">
+        <div class="s88-parse-box"><b>内容底线</b><span>原创声明 + 版权核对 + 授权追溯</span></div>
+        <div class="s88-parse-box"><b>内容三线</b><span>教程攻略 / 测评观察 / 故事访谈</span></div>
+        <div class="s88-parse-box"><b>社区机制</b><span>公开评审 + 创作基金 + 季度观察</span></div>
+        <div class="s88-parse-box"><b>长期节奏</b><span>每周更新 · 每月专题 · 每季挑战</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== M4 专题与企划 ===== -->
+<section class="s88-sec" id="sec-topics">
+  <div class="s88-wrap">
+    <div class="s88-sec-head">
+      <div>
+        <p class="s88-tagline">Series &amp; Projects</p>
+        <h2>专题与企划 <span>· 色88官方策展</span></h2>
+        <p>围绕色彩展开的长期内容计划，每个专题由官方编辑与社区创作者共同推进，持续更新中。</p>
+      </div>
+    </div>
+
+    <div class="s88-topic-grid">
+      <article class="s88-topic">
+        <div class="s88-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="专题《冬季色彩命题》封面：雪地中的暖色灯光小屋">
+            <rect width="640" height="360" fill="#dfe8f5"/>
+            <path d="M0 250 Q160 210 320 246 T640 236 V360 H0 Z" fill="#f7fbff"/>
+            <g>
+              <rect x="250" y="170" width="140" height="90" fill="#c9d6e8"/>
+              <path d="M240 170 L320 118 L400 170 Z" fill="#9fb4d8"/>
+              <rect x="282" y="206" width="34" height="34" fill="#ffc94d"/>
+              <rect x="336" y="206" width="34" height="54" fill="#ff6b4a"/>
+            </g>
+            <g fill="#ffffff">
+              <circle cx="110" cy="80" r="6"/>
+              <circle cx="520" cy="70" r="5"/>
+              <circle cx="440" cy="110" r="4"/>
+              <circle cx="180" cy="130" r="4"/>
+            </g>
+            <text x="24" y="330" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#3c4a68">EP.024 · 冬季命题</text>
+          </svg>
+        </div>
+        <div class="s88-topic-body">
+          <h3>冬季色彩命题创作挑战</h3>
+          <p>以“冷色中的一点暖”为题，拍摄 3 分钟以内的原创短片。所有作品将由社区公开投票与官方评审共同评选。</p>
+          <ol>
+            <li>提交截止：2027-01-15，可通过官方投稿入口上传</li>
+            <li>评审维度：色彩意图、叙事完成度、声音设计</li>
+            <li>入选作品将进入色88年度精选片单与线下展映</li>
+          </ol>
+          <div class="s88-topic-state"><span class="s88-chip s88-chip-coral">报名中</span><span>已收稿 386 支</span></div>
+        </div>
+      </article>
+
+      <article class="s88-topic">
+        <div class="s88-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="专题《一座城市的颜色档案》封面：层叠街区色块拼贴">
+            <rect width="640" height="360" fill="#fbf6ec"/>
+            <g>
+              <rect x="30" y="80" width="120" height="180" fill="#e8748a"/>
+              <rect x="160" y="40" width="110" height="220" fill="#ffc94d"/>
+              <rect x="280" y="110" width="100" height="150" fill="#63b8ee"/>
+              <rect x="390" y="60" width="120" height="200" fill="#7adca0"/>
+              <rect x="520" y="100" width="90" height="160" fill="#a98ae8"/>
+            </g>
+            <g fill="#1f2a44" fill-opacity="0.6">
+              <rect x="52" y="110" width="18" height="26"/>
+              <rect x="88" y="110" width="18" height="26"/>
+              <rect x="180" y="80" width="18" height="26"/>
+              <rect x="216" y="80" width="18" height="26"/>
+              <rect x="300" y="140" width="18" height="26"/>
+              <rect x="412" y="96" width="18" height="26"/>
+              <rect x="540" y="130" width="18" height="26"/>
+            </g>
+            <text x="30" y="320" font-family="system-ui,sans-serif" font-size="17" font-weight="800" fill="#1f2a44">街区色彩样本 · 12 期</text>
+          </svg>
+        </div>
+        <div class="s88-topic-body">
+          <h3>一座城市的颜色档案</h3>
+          <p>每月走进一个街区，记录墙面、招牌、公交与树影的颜色谱系，最终汇成一份可检索的城市色彩档案。</p>
+          <ol>
+            <li>已完成 9 个街区，含老街、大学城与码头片区</li>
+            <li>每期附可下载的色卡与拍摄点位地图</li>
+            <li>欢迎本地创作者补充投稿，署名进入档案</li>
+          </ol>
+          <div class="s88-topic-state"><span class="s88-chip s88-chip-mint">更新中</span><span>第 10 期制作中</span></div>
+        </div>
+      </article>
+
+      <article class="s88-topic">
+        <div class="s88-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="专题《创作者访谈录》封面：两把椅子与一束侧光">
+            <rect width="640" height="360" fill="#1e2740"/>
+            <g opacity="0.9">
+              <path d="M60 0 L240 360 H0 Z" fill="#ffc94d" fill-opacity="0.18"/>
+              <path d="M140 0 L340 360 H180 Z" fill="#ff6b4a" fill-opacity="0.14"/>
+            </g>
+            <g fill="#2f3d5e">
+              <rect x="180" y="200" width="120" height="120" rx="10"/>
+              <rect x="356" y="200" width="120" height="120" rx="10"/>
+            </g>
+            <g fill="#aab7d0">
+              <circle cx="240" cy="170" r="26"/>
+              <circle cx="416" cy="170" r="26"/>
+            </g>
+            <g stroke="#eaf0fb" stroke-opacity="0.5" stroke-width="3">
+              <line x1="320" y1="90" x2="320" y2="150"/>
+            </g>
+            <circle cx="320" cy="168" r="12" fill="#ffc94d"/>
+            <text x="24" y="330" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#eaf0fb">S02 · 创作者访谈录</text>
+          </svg>
+        </div>
+        <div class="s88-topic-body">
+          <h3>创作者访谈录 第二季</h3>
+          <p>不聊涨粉，只聊方法。每期请一位长期创作者复盘一支代表作，从选题犹豫到最终成片，完整还原决策过程。</p>
+          <ol>
+            <li>已上线 8 期，涵盖纪录片、广告、短片与动画</li>
+            <li>附完整分镜表与时间线文件，可供下载参考</li>
+            <li>第三季选题开放征集，欢迎留言推荐嘉宾</li>
+          </ol>
+          <div class="s88-topic-state"><span class="s88-chip s88-chip-sun">连载中</span><span>最新一期 11-20</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== M5 创作者矩阵（双列简介） ===== -->
+<section class="s88-sec s88-sec-alt" id="sec-authors">
+  <div class="s88-wrap">
+    <div class="s88-sec-head">
+      <div>
+        <p class="s88-tagline">Creators</p>
+        <h2>创作者矩阵 <span>· 色88社区的中坚力量</span></h2>
+        <p>他们将技术讲清楚，也把感受讲明白。色88的内容生态由这些长期更新的创作者共同支撑。</p>
+      </div>
+    </div>
+
+    <div class="s88-author-grid">
+      <article class="s88-author">
+        <div class="s88-avatar s88-avatar-a" aria-hidden="true">岚</div>
+        <div class="s88-author-info">
+          <h3>调色师阿岚</h3>
+          <div class="s88-author-field">调色 · 影像技术</div>
+          <p>入行九年，做过纪录片与广告后期。她的视频习惯把参数写在画面上，让观众能暂停抄下来。她说调色不是变魔术，而是把拍摄时漏掉的信息补回来。色88图像实验室固定讲师。</p>
+          <div class="s88-author-nums"><span>作品 <b>126</b></span><span>粉丝 <b>4.8 万</b></span></div>
+          <button class="s88-author-btn" type="button" data-s88-author="调色师阿岚">查看创作者档案</button>
+        </div>
+      </article>
+
+      <article class="s88-author">
+        <div class="s88-avatar s88-avatar-b" aria-hidden="true">满</div>
+        <div class="s88-author-info">
+          <h3>街拍小满</h3>
+          <div class="s88-author-field">城市探索 · 街拍摄影</div>
+          <p>走遍本地 40 多个街区，最擅长在普通路口找光。她的作品节奏很慢，几乎没有旁白，却能把一条街的性格拍出来。近一年持续更新“城市取景地实测”系列，被不少新人当作入门地图。</p>
+          <div class="s88-author-nums"><span>作品 <b>88</b></span><span>粉丝 <b>3.2 万</b></span></div>
+          <button class="s88-author-btn" type="button" data-s88-author="街拍小满">查看创作者档案</button>
+        </div>
+      </article>
+
+      <article class="s88-author">
+        <div class="s88-avatar s88-avatar-c" aria-hidden="true">木</div>
+        <div class="s88-author-info">
+          <h3>木头与颜料</h3>
+          <div class="s88-author-field">手作 DIY · 材料实验</div>
+          <p>本职是家具修复师，业余拍手作过程。他喜欢把失败镜头留着，因为“做坏了才知道边界在哪”。色88社区里最受欢迎的手作作者之一，视频常用一镜到底展示完整制作流程。</p>
+          <div class="s88-author-nums"><span>作品 <b>64</b></span><span>粉丝 <b>2.6 万</b></span></div>
+          <button class="s88-author-btn" type="button" data-s88-author="木头与颜料">查看创作者档案</button>
+        </div>
+      </article>
+
+      <article class="s88-author">
+        <div class="s88-avatar s88-avatar-d" aria-hidden="true">禾</div>
+        <div class="s88-author-info">
+          <h3>夜行记阿禾</h3>
+          <div class="s88-author-field">治愈影像 · 生活记录</div>
+          <p>白天上班，晚上拍摄。他的短片大多在通勤路上完成，最长一支拍了三个月。阿禾相信“日常不需要被美化，只需要被认真看”。色88年度治愈单元入选作者。</p>
+          <div class="s88-author-nums"><span>作品 <b>53</b></span><span>粉丝 <b>5.1 万</b></span></div>
+          <button class="s88-author-btn" type="button" data-s88-author="夜行记阿禾">查看创作者档案</button>
+        </div>
+      </article>
+
+      <article class="s88-author">
+        <div class="s88-avatar s88-avatar-e" aria-hidden="true">周</div>
+        <div class="s88-author-info">
+          <h3>器材清单老周</h3>
+          <div class="s88-author-field">深度测评 · 行业观察</div>
+          <p>做了十年影像器材编辑，坚持自购机器测评，不接受品牌送测。他的视频数据密度高，结论常带条件限定，被用户评价为“不替你做决定，但把依据给足”。</p>
+          <div class="s88-author-nums"><span>作品 <b>142</b></span><span>粉丝 <b>6.7 万</b></span></div>
+          <button class="s88-author-btn" type="button" data-s88-author="器材清单老周">查看创作者档案</button>
+        </div>
+      </article>
+
+      <article class="s88-author">
+        <div class="s88-avatar s88-avatar-a" aria-hidden="true">慢</div>
+        <div class="s88-author-info">
+          <h3>慢镜头妈妈</h3>
+          <div class="s88-author-field">亲子成长 · 家庭影像</div>
+          <p>两个孩子的母亲，用镜头记录成长中的小问题。她擅长把教育话题放进具体场景，不急着给答案。系列作品“孩子眼中的世界”在色88站内累计播放超过二十万次。</p>
+          <div class="s88-author-nums"><span>作品 <b>71</b></span><span>粉丝 <b>2.9 万</b></span></div>
+          <button class="s88-author-btn" type="button" data-s88-author="慢镜头妈妈">查看创作者档案</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== M8 用户评价（双列短评 + 评分摘要） ===== -->
+<section class="s88-sec" id="sec-comments">
+  <div class="s88-wrap">
+    <div class="s88-sec-head">
+      <div>
+        <p class="s88-tagline">Community Reviews</p>
+        <h2>用户口碑 <span>· 来自色88社区的真实反馈</span></h2>
+        <p>以下短评来自站内观众与创作者，维度各不相同，我们保留原文，不做修饰。</p>
+      </div>
+    </div>
+
+    <div class="s88-cmt-summary">
+      <div class="s88-score"><b>4.8</b><span>/ 5 综合评分<br>基于 3,742 条评价</span></div>
+      <div class="s88-score-bars">
+        <div class="s88-bar"><span>内容质量</span><i><b style="width:96%"></b></i><span>4.9</span></div>
+        <div class="s88-bar"><span>画质清晰</span><i><b style="width:94%"></b></i><span>4.8</span></div>
+        <div class="s88-bar"><span>社区氛围</span><i><b style="width:90%"></b></i><span>4.7</span></div>
+        <div class="s88-bar"><span>更新频率</span><i><b style="width:92%"></b></i><span>4.8</span></div>
+      </div>
+    </div>
+
+    <div class="s88-cmt-grid">
+      <article class="s88-cmt">
+        <div class="s88-cmt-top">
+          <div class="s88-avatar s88-avatar-b" aria-hidden="true">青</div>
+          <div><b>青柠汽水</b><small>观众 · 加入 14 个月</small></div>
+        </div>
+        <p>调色那期我暂停了十几次记参数，是目前看过最不藏私的教程。唯一的问题是看完就想马上出门拍东西。</p>
+        <div class="s88-cmt-foot"><span>2026-11-19</span><button type="button" data-s88-helped>有帮助 32</button></div>
+      </article>
+
+      <article class="s88-cmt">
+        <div class="s88-cmt-top">
+          <div class="s88-avatar s88-avatar-c" aria-hidden="true">木</div>
+          <div><b>半坡木工</b><small>创作者 · 手作区</small></div>
+        </div>
+        <p>作为一个也拍手作的人，能看出木头那支片子的剪辑有多克制。没有多余转场，观众注意力全在手上。这才是内容本身的品质。</p>
+        <div class="s88-cmt-foot"><span>2026-11-17</span><button type="button" data-s88-helped>有帮助 26</button></div>
+      </article>
+
+      <article class="s88-cmt">
+        <div class="s88-cmt-top">
+          <div class="s88-avatar s88-avatar-d" aria-hidden="true">夜</div>
+          <div><b>凌晨两点半</b><small>观众 · 治愈单元</small></div>
+        </div>
+        <p>《最后一班公交》那支我看了三遍。说不清好看在哪，就是看完心静下来了。希望色88多留一点这样的位置。</p>
+        <div class="s88-cmt-foot"><span>2026-11-16</span><button type="button" data-s88-helped>有帮助 41</button></div>
+      </article>
+
+      <article class="s88-cmt">
+        <div class="s88-cmt-top">
+          <div class="s88-avatar s88-avatar-e" aria-hidden="true">器</div>
+          <div><b>器材党小罗</b><small>观众 · 测评区</small></div>
+        </div>
+        <p>老周的横评我认，因为他会把“不适合谁”说清楚。很多测评只讲优点，这里至少能看到取舍。</p>
+        <div class="s88-cmt-foot"><span>2026-11-14</span><button type="button" data-s88-helped>有帮助 19</button></div>
+      </article>
+
+      <article class="s88-cmt">
+        <div class="s88-cmt-top">
+          <div class="s88-avatar s88-avatar-a" aria-hidden="true">妈</div>
+          <div><b>两个娃的妈</b><small>观众 · 亲子区</small></div>
+        </div>
+        <p>跟着视频里的三个小练习，带孩子在小区找颜色，居然玩了一个下午。这种把方法落到生活里的内容很有用。</p>
+        <div class="s88-cmt-foot"><span>2026-11-12</span><button type="button" data-s88-helped>有帮助 53</button></div>
+      </article>
+
+      <article class="s88-cmt">
+        <div class="s88-cmt-top">
+          <div class="s88-avatar s88-avatar-b" aria-hidden="true">独</div>
+          <div><b>独立导演小唐</b><small>创作者 · 短片区</small></div>
+        </div>
+        <p>投稿流程比想象中简单，版权核对问得很细，但能理解。作品上线后编辑还回了一段修改建议，这点很意外，也很加分。</p>
+        <div class="s88-cmt-foot"><span>2026-11-10</span><button type="button" data-s88-helped>有帮助 37</button></div>
+      </article>
+
+      <article class="s88-cmt">
+        <div class="s88-cmt-top">
+          <div class="s88-avatar s88-avatar-c" aria-hidden="true">星</div>
+          <div><b>星野观察</b><small>观众 · 城市档案</small></div>
+        </div>
+        <p>城市色卡下载过两次，用在了自己的短片里。希望覆盖的街区再多一些，我住的片区还没被拍到。</p>
+        <div class="s88-cmt-foot"><span>2026-11-08</span><button type="button" data-s88-helped>有帮助 22</button></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== M10 企业动态 ===== -->
+<section class="s88-sec s88-sec-alt" id="sec-news">
+  <div class="s88-wrap">
+    <div class="s88-sec-head">
+      <div>
+        <p class="s88-tagline">Company News</p>
+        <h2>企业动态 <span>· 色88官方发布</span></h2>
+        <p>平台更新、合作进展与内容计划，按月归档，接受社区监督。</p>
+      </div>
+    </div>
+    <div class="s88-news-grid">
+      <article class="s88-news">
+        <time datetime="2026-11-20">2026-11-20</time>
+        <h3>高清下载通道开放第二批创作者</h3>
+        <p>面向持续更新满一年的创作者开放 4K 原片下载，附带授权记录与用途说明，首批 120 位已全部开通。</p>
+      </article>
+      <article class="s88-news">
+        <time datetime="2026-11-14">2026-11-14</time>
+        <h3>冬季命题挑战评审团名单公布</h3>
+        <p>由三位导演、两位影像编辑与四位社区用户组成，评分维度与评分表同步公开在帮助中心。</p>
+      </article>
+      <article class="s88-news">
+        <time datetime="2026-11-05">2026-11-05</time>
+        <h3>色88与城市文化馆合作在地影像展</h3>
+        <p>首批 24 支社区作品将于十二月进入线下展映，展期三周，免费开放，现场设创作者交流场次。</p>
+      </article>
+      <article class="s88-news">
+        <time datetime="2026-10-28">2026-10-28</time>
+        <h3>内容观察报告第四期发布</h3>
+        <p>梳理过去一季社区高频问题，形成 14 个新选题方向，已分配至官方制作组与签约创作者。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== M11 合作品牌 ===== -->
+<section class="s88-sec">
+  <div class="s88-wrap">
+    <div class="s88-sec-head">
+      <div>
+        <p class="s88-tagline">Partners</p>
+        <h2>合作品牌与伙伴 <span>· 共同打磨内容品质</span></h2>
+        <p>在企业内容、设备支持与线下展映三个方向，色88与以下伙伴长期合作。</p>
+      </div>
+    </div>
+    <div class="s88-partner-grid">
+      <div class="s88-partner"><i aria-hidden="true"></i>光屿影像器材</div>
+      <div class="s88-partner"><i aria-hidden="true"></i>南岸城市文化馆</div>
+      <div class="s88-partner"><i aria-hidden="true"></i>调色工坊联盟</div>
+      <div class="s88-partner"><i aria-hidden="true"></i>青禾青年影像基金</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== M12 FAQ ===== -->
+<section class="s88-sec s88-sec-alt" id="sec-faq">
+  <div class="s88-wrap">
+    <div class="s88-sec-head">
+      <div>
+        <p class="s88-tagline">Help Center</p>
+        <h2>常见问题 <span>· 关于色88官方平台</span></h2>
+        <p>点击问题展开答案。若仍有疑问，可通过页面底部的联系入口反馈。</p>
+      </div>
+    </div>
+    <div class="s88-faq">
+      <details>
+        <summary>色88是做什么的视频品牌？</summary>
+        <p>色88是一家专注色彩影像与原创短片的视频品牌，官方网站提供视频观看、创作者档案、专题策展与投稿入口，内容覆盖教程、测评、城市探索、生活记录与人物访谈。</p>
+      </details>
+      <details>
+        <summary>如何向色88投稿我的作品？</summary>
+        <p>在页面底部的投稿入口提交作品信息与素材链接，需确认作品为原创并同意原创声明。编辑会在七个工作日内给出初审结果，通过后进入排期与版权核对环节。</p>
+      </details>
+      <details>
+        <summary>平台内容可以下载吗？</summary>
+        <p>部分内容提供高清下载通道，权限按创作者等级与用途开放。商业用途需在投稿或合作申请时说明，平台会提供对应的授权记录，方便后续追溯。</p>
+      </details>
+      <details>
+        <summary>冬季命题挑战的评审标准是什么？</summary>
+        <p>评审从色彩意图、叙事完成度与声音设计三个维度打分，社区投票占一定权重但不单独决定结果。完整评分表可在帮助中心查看，评审结束后会公布分数分布。</p>
+      </details>
+      <details>
+        <summary>没有专业设备也能参与吗？</summary>
+        <p>可以。色88社区设有手机创作分区，许多入选作品使用手机完成。我们更关注表达是否清楚，而不是设备参数。教程线也提供手机拍摄的专项内容。</p>
+      </details>
+      <details>
+        <summary>如何成为签约创作者？</summary>
+        <p>持续更新满六个月、作品稳定且符合原创规范的作者可以申请。签约后享有创作基金、设备试用与专题优先参与权，具体条款由编辑团队一对一沟通。</p>
+      </details>
+      <details>
+        <summary>企业合作怎么联系？</summary>
+        <p>品牌片制作、内容共建与线下展映均可洽谈。请通过底部联系入口提交需求描述、时间计划与预算区间，商务团队会在三个工作日内回复。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== M13 投稿 / 联系 ===== -->
+<section class="s88-sec" id="sec-join">
+  <div class="s88-wrap">
+    <div class="s88-join">
+      <div>
+        <h2>把你的颜色放进色88</h2>
+        <p>无论你拍的是三分钟短片还是一整年的日常，这里都有位置。投稿即进入社区评审，入选作品将获得官方推荐与创作基金支持。</p>
+      </div>
+      <div class="s88-join-actions">
+        <button class="s88-btn s88-btn-coral" type="button" id="s88SubmitBtn">我要投稿</button>
+        <button class="s88-btn s88-btn-ghost" type="button" id="s88ContactBtn">商务与反馈</button>
+        <button class="s88-btn s88-btn-ghost" type="button" data-s88-share>分享本页</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== S8 页脚 ===== -->
+<footer class="s88-footer">
+  <div class="s88-wrap">
+    <div class="s88-footer-grid">
+      <div>
+        <div class="s88-logo" style="margin-bottom:12px">
+          <span class="s88-logo-mark" aria-hidden="true"><span></span></span>
+          <span class="s88-logo-txt">色88<small>SE88 VIDEO</small></span>
+        </div>
+        <p>色88官方网站 · 色彩影像与原创短片视频品牌。持续运营高品质内容生态，坚持原创与正版，为创作者与观众提供值得信赖的影像社区。</p>
+        <p>品牌口号：让每一种颜色都被看见。</p>
+      </div>
+      <div>
+        <h3>内容入口</h3>
+        <ul>
+          <li><a href="#sec-focus">焦点内容</a></li>
+          <li><a href="#sec-videos">热门视频流</a></li>
+          <li><a href="#sec-topics">专题与企划</a></li>
+          <li><a href="#sec-parse">关键词解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>社区</h3>
+        <ul>
+          <li><a href="#sec-authors">创作者矩阵</a></li>
+          <li><a href="#sec-comments">用户口碑</a></li>
+          <li><a href="#sec-join">投稿入口</a></li>
+          <li><a href="#sec-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>关于色88</h3>
+        <ul>
+          <li><a href="#sec-news">企业动态</a></li>
+          <li><a href="#sec-topics">品牌故事</a></li>
+          <li><a href="#sec-join">商务合作</a></li>
+          <li><a href="#sec-faq">常见问题</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="s88-footer-bottom">
+      <span>© 2026 色88 版权所有 · 官方网站持续运营中</span>
+      <span>内容备案号：SE88-2026-1122 · 原创内容受版权保护</span>
+    </div>
+  </div>
+</footer>
+
+<button class="s88-totop" id="s88Top" type="button" aria-label="回到顶部">↑</button>
+<div class="s88-toast" id="s88Toast" role="status" aria-live="polite"></div>
+
+<!-- 通用弹窗 -->
+<div class="s88-modal" id="s88Modal" role="dialog" aria-modal="true" aria-labelledby="s88ModalTitle">
+  <div class="s88-modal-card">
+    <button class="s88-modal-close" type="button" id="s88ModalClose" aria-label="关闭">×</button>
+    <h3 id="s88ModalTitle">标题</h3>
+    <div id="s88ModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('s88Toast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('s88-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('s88-show'); }, 2200);
+  }
+
+  /* ===== 移动端导航折叠 ===== */
+  var burger = document.getElementById('s88Burger');
+  var mobileNav = document.getElementById('s88MobileNav');
+  if(burger && mobileNav){
+    burger.addEventListener('click', function(){
+      var on = mobileNav.classList.toggle('s88-on');
+      burger.setAttribute('aria-expanded', on ? 'true' : 'false');
+      burger.textContent = on ? '×' : '☰';
+    });
+    mobileNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        mobileNav.classList.remove('s88-on');
+        burger.setAttribute('aria-expanded','false');
+        burger.textContent = '☰';
+      }
+    });
+  }
+
+  /* ===== 搜索反馈 ===== */
+  var searchInput = document.getElementById('s88SearchInput');
+  var searchBtn = document.getElementById('s88SearchBtn');
+  var searchTip = document.getElementById('s88SearchTip');
+  var index = [
+    {k:'调色', t:'《三分钟调出电影感青橙色》 · 教程干货'},
+    {k:'城市', t:'《三原色的城市夜行》 · 城市探索'},
+    {k:'测评', t:'《三家国产相机横评》 · 深度测评'},
+    {k:'专题', t:'冬季色彩命题创作挑战 · 报名中'},
+    {k:'作者', t:'调色师阿岚 · 街拍小满 · 夜行记阿禾'},
+    {k:'投稿', t:'投稿入口 · 原创声明与排期说明'},
+    {k:'手作', t:'《一块旧木板的十二种颜色》 · 手作 DIY'},
+    {k:'治愈', t:'《夜晚的最后一班公交》 · 治愈影像'}
+  ];
+  function doSearch(){
+    var q = (searchInput && searchInput.value || '').trim();
+    if(!searchTip) return;
+    if(!q){
+      searchTip.innerHTML = '输入关键词试试：调色、城市、测评、专题、作者、投稿';
+      searchTip.classList.add('s88-on');
+      return;
+    }
+    var hits = index.filter(function(item){
+      return item.k.indexOf(q) > -1 || item.t.indexOf(q) > -1;
+    });
+    if(hits.length){
+      searchTip.innerHTML = '找到 <b>' + hits.length + '</b> 条与「' + q + '」相关：<br>' +
+        hits.slice(0,4).map(function(h){ return '· ' + h.t; }).join('<br>');
+    }else{
+      searchTip.innerHTML = '暂时没有与「<b>' + q + '</b>」完全匹配的条目，试试“调色”“城市”“投稿”。';
+    }
+    searchTip.classList.add('s88-on');
+  }
+  if(searchBtn){ searchBtn.addEventListener('click', doSearch); }
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+    searchInput.addEventListener('input', function(){
+      if(!searchInput.value){ if(searchTip) searchTip.classList.remove('s88-on'); }
+    });
+  }
+  document.addEventListener('click', function(e){
+    if(searchTip && searchTip.classList.contains('s88-on')){
+      var wrap = searchTip.parentNode;
+      if(!wrap.contains(e.target)){ searchTip.classList.remove('s88-on'); }
+    }
+  });
+
+  /* ===== 点赞 / 收藏状态切换 ===== */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-s88-like]');
+    if(likeBtn){
+      var b = likeBtn.querySelector('b');
+      if(!b) return;
+      var liked = likeBtn.classList.toggle('s88-liked');
+      var n = parseInt(b.textContent.replace(/,/g,''),10) || 0;
+      n = liked ? n + 1 : Math.max(0, n - 1);
+      b.textContent = n.toLocaleString('en-US');
+      likeBtn.firstChild.textContent = liked ? '👍 已赞 ' : '👍 点赞 ';
+      showToast(liked ? '已点赞，感谢支持创作者' : '已取消点赞');
+      return;
+    }
+    var saveBtn = e.target.closest('[data-s88-save]');
+    if(saveBtn){
+      var saved = saveBtn.classList.toggle('s88-saved');
+      saveBtn.textContent = saved ? '★ 已收藏' : '☆ 收藏';
+      showToast(saved ? '已加入收藏夹' : '已取消收藏');
+    }
+  });
+
+  /* ===== 分享 / 复制链接 ===== */
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function(resolve, reject){
+      try{
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        resolve();
+      }catch(err){ reject(err); }
+    });
+  }
+  document.addEventListener('click', function(e){
+    var shareBtn = e.target.closest('[data-s88-share]');
+    if(shareBtn){
+      e.preventDefault();
+      copyText(window.location.href).then(function(){
+        showToast('链接已复制，可分享到微信 / 微博');
+      }).catch(function(){
+        showToast('分享链接：可在浏览器地址栏复制');
+      });
+    }
+  });
+
+  /* ===== 弹窗基础 ===== */
+  var modal = document.getElementById('s88Modal');
+  var modalTitle = document.getElementById('s88ModalTitle');
+  var modalBody = document.getElementById('s88ModalBody');
+  var modalClose = document.getElementById('s88ModalClose');
+  function openModal(title, html){
+    if(!modal) return;
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add('s88-on');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    if(!modal) return;
+    modal.classList.remove('s88-on');
+    document.body.style.overflow = '';
+  }
+  if(modalClose){ modalClose.addEventListener('click', closeModal); }
+  if(modal){
+    modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+  }
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+  /* ===== 作者档案弹窗 ===== */
+  var authorData = {
+    '调色师阿岚':{f:'调色 · 影像技术',w:126,fan:'4.8 万',d:'入行九年，专注纪录片与广告后期。固定更新“图像实验室”系列，把参数写在画面上，方便观众暂停抄录。色88图像实验室常驻讲师。'},
+    '街拍小满':{f:'城市探索 · 街拍摄影',w:88,fan:'3.2 万',d:'走遍本地 40 多个街区，擅长在普通路口找光。“城市取景地实测”系列被新人当作入门地图，节奏缓慢，几乎没有旁白。'},
+    '木头与颜料':{f:'手作 DIY · 材料实验',w:64,fan:'2.6 万',d:'本职家具修复师，业余拍手作过程。喜欢保留失败镜头，认为做坏了才知道边界在哪。视频常用一镜到底展示完整流程。'},
+    '夜行记阿禾':{f:'治愈影像 · 生活记录',w:53,fan:'5.1 万',d:'白天上班，晚上拍摄。短片多在通勤路上完成，最长一支拍了三个月。相信日常不需要被美化，只需要被认真看。'},
+    '器材清单老周':{f:'深度测评 · 行业观察',w:142,fan:'6.7 万',d:'十年影像器材编辑，坚持自购机器测评，不接受品牌送测。数据密度高，结论常带条件限定，被评价为“把依据给足”。'},
+    '慢镜头妈妈':{f:'亲子成长 · 家庭影像',w:71,fan:'2.9 万',d:'两个孩子的母亲，用镜头记录成长中的小问题。擅长把教育话题放进具体场景，不急着给答案。系列作品站内播放超二十万。'}
+  };
+  document.addEventListener('click', function(e){
+    var authorBtn = e.target.closest('[data-s88-author]');
+    if(authorBtn){
+      var name = authorBtn.getAttribute('data-s88-author');
+      var d = authorData[name];
+      if(!d){ showToast('正在加载创作者档案'); return; }
+      openModal('创作者档案 · ' + name,
+        '<p><b>擅长领域：</b>' + d.f + '</p>' +
+        '<p><b>作品数：</b>' + d.w + ' &nbsp; <b>粉丝：</b>' + d.fan + '</p>' +
+        '<p>' + d.d + '</p>' +
+        '<p style="color:#6b7793;font-size:.8rem">档案由色88官方审核，数据每月更新一次。</p>'
+      );
+    }
+  });
+
+  /* ===== 评论弹窗 ===== */
+  document.addEventListener('click', function(e){
+    var commentBtn = e.target.closest('[data-s88-comment]');
+    if(commentBtn){
+      var title = '';
+      var card = commentBtn.closest('.s88-video-item, .s88-focus-main');
+      if(card){
+        var h3 = card.querySelector('h3');
+        if(h3) title = h3.textContent.trim();
+      }
+      openModal('发表评论',
+        '<p>正在评论：' + (title || '色88 精选内容') + '</p>' +
+        '<textarea id="s88CommentText" rows="4" placeholder="写下你的看法，友善交流更容易被看见"></textarea>' +
+        '<div class="s88-modal-actions">' +
+        '<button class="s88-btn s88-btn-ghost" type="button" data-s88-modal-cancel>取消</button>' +
+        '<button class="s88-btn s88-btn-coral" type="button" id="s88CommentSend">发布</button>' +
+        '</div>'
+      );
+    }
+  });
+  document.addEventListener('click', function(e){
+    if(e.target.closest('[data-s88-modal-cancel]')){ closeModal(); }
+    if(e.target.id === 's88CommentSend'){
+      var ta = document.getElementById('s88CommentText');
+      var txt = ta ? ta.value.trim() : '';
+      if(!txt){ showToast('请先写一点内容'); return; }
+      closeModal();
+      showToast('评论已发布，等待审核后展示');
+    }
+  });
+
+  /* ===== 评价“有帮助” ===== */
+  document.addEventListener('click', function(e){
+    var helped = e.target.closest('[data-s88-helped]');
+    if(helped){
+      var label = helped.textContent.replace(/\s*有帮助\s*/,'').replace(/\s+/g,'');
+      var num = parseInt(label,10) || 0;
+      helped.textContent = '有帮助 ' + (num + 1);
+      helped.disabled = true;
+      helped.style.color = '#2fae8f';
+      showToast('感谢反馈，这会帮助其他用户判断');
+    }
+  });
+
+  /* ===== 投稿 / 联系弹窗 ===== */
+  var submitBtn = document.getElementById('s88SubmitBtn');
+  if(submitBtn){
+    submitBtn.addEventListener('click', function(){
+      openModal('投稿入口',
+        '<p>请填写作品基本信息，编辑将在七个工作日内给出初审结果。提交即视为确认作品为原创。</p>' +
+        '<input type="text" id="s88WorkName" placeholder="作品名称">' +
+        '<input type="text" id="s88WorkAuthor" placeholder="创作者昵称">' +
+        '<textarea id="s88WorkDesc" rows="3" placeholder="一句话说明作品主题与拍摄方式"></textarea>' +
+        '<div class="s88-modal-actions">' +
+        '<button class="s88-btn s88-btn-ghost" type="button" data-s88-modal-cancel>取消</button>' +
+        '<button class="s88-btn s88-btn-coral" type="button" id="s88WorkSend">提交初审</button>' +
+        '</div>'
+      );
+    });
+  }
+  var contactBtn = document.getElementById('s88ContactBtn');
+  if(contactBtn){
+    contactBtn.addEventListener('click', function(){
+      openModal('商务合作与反馈',
+        '<p>品牌片制作、内容共建、线下展映与技术问题反馈均可在此提交。</p>' +
+        '<input type="text" id="s88ContactName" placeholder="称呼 / 机构名称">' +
+        '<textarea id="s88ContactDesc" rows="4" placeholder="需求描述、时间计划与预算区间"></textarea>' +
+        '<div class="s88-modal-actions">' +
+        '<button class="s88-btn s88-btn-ghost" type="button" data-s88-modal-cancel>取消</button>' +
+        '<button class="s88-btn s88-btn-coral" type="button" id="s88ContactSend">发送</button>' +
+        '</div>'
+      );
+    });
+  }
+  document.addEventListener('click', function(e){
+    if(e.target.id === 's88WorkSend'){
+      var n = document.getElementById('s88WorkName');
+      if(n && !n.value.trim()){ showToast('请填写作品名称'); return; }
+      closeModal();
+      showToast('投稿已提交，请留意站内通知');
+    }
+    if(e.target.id === 's88ContactSend'){
+      closeModal();
+      showToast('已收到，商务团队将尽快回复');
+    }
+  });
+
+  /* ===== 回到顶部 ===== */
+  var topBtn = document.getElementById('s88Top');
+  function onScroll(){
+    if(!topBtn) return;
+    if(window.scrollY > 480){ topBtn.classList.add('s88-show'); }
+    else{ topBtn.classList.remove('s88-show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  if(topBtn){
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+  onScroll();
+})();
+</script>
+
+</body>
+          </html>
